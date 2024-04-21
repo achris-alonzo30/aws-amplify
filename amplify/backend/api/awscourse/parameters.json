@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "awscourse",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authawscourse68704cbd",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
